@@ -14,6 +14,23 @@ def getLocation():
         print("Could not Detect Location Automatically!")
         return None
 
+# === Getting Cordinates from City ===
+def getCoordinates(city, api_key):
+    url = "http://api.openweathermap.org/geo/1.0/direct"
+    params = {'q': city, 'limit': 1, 'appid': api_key}
+    res = requests.get(url, params=params).json()
+    if res:
+        return res[0]['lat'], res[0]['lon']
+    else:
+        raise Exception("City not found")
+
+# === Getting Forecast of every 3rd Hour ===
+def getForecast(city,api_key):
+    url = "https://api.openweathermap.org/data/2.5/forecast"
+    lat , lon = getCoordinates(city, api_key)
+    params = {'lat': lat, 'lon': lon, 'appid': api_key, 'units': 'metric'}
+    res = requests.get(url, params=params).json()
+    return res['list']  # List of forecasts every 3 hours
 
 # === Getting Weather Data ===
 def getWeather(city):
@@ -72,4 +89,4 @@ def main():
     getWeather(city)
 
 
-main()
+#main()
