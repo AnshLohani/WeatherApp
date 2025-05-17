@@ -46,3 +46,9 @@ A simple Python project that fetches weather data using the OpenWeatherMap API a
 - This dashboard is a practice project to understand API interaction, data processing, and visualization in Python.
 - The current visualization can be further improved aesthetically by adding icons, color gradients, interactive plots, and more detailed weather parameters.
 - Feel free to fork and customize the project to suit your needs!
+
+---
+
+## ScreenShots
+![weather_dashboard](https://github.com/user-attachments/assets/a6c3e93b-d1a9-445a-97a3-4ed61e3ba069)
+
