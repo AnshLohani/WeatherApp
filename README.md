@@ -50,5 +50,8 @@ A simple Python project that fetches weather data using the OpenWeatherMap API a
 ---
 
 ## ScreenShots
+- CLI App
+![image](https://github.com/user-attachments/assets/ac7dfc8c-f3c1-463c-8db6-d9356424797d)
+- Dashboard App
 ![weather_dashboard](https://github.com/user-attachments/assets/a6c3e93b-d1a9-445a-97a3-4ed61e3ba069)
 
